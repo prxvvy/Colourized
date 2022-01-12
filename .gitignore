@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+.prettierrc
+Makefile
+tsconfig.json
+build/
+.git
+test/
+index.ts
