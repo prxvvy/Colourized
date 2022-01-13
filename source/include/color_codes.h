@@ -10,6 +10,9 @@
 #define RED "[31m"
 #define YELLOW "[33m"
 #define GREEN "[32m"
+#define BLACK "[30m"
+#define BLUE "[34m"
+#define MAGENTA "[35m"
 // ESC 
 #define ESC "\033"
 // Reset
