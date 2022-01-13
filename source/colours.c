@@ -14,16 +14,14 @@
 */
 
 #include "include/colours.h" 
+#include "include/colours.h"
 #include "include/utils.h"
+#include "include/color_codes.h"
 
-char *Red(char *str) {
-    return concatenate("\033[31m", str, Clean());
+char *Red(char *p_str) {
+    return Colorify(ESC, RED, p_str, RESET);
 }
 
-char *Yellow(char *str) {
-    return concatenate("\033[33m", str, Clean());
-}
-
-char *Clean() {
-    return "\033[0m";
+char *Yellow(char *p_str) {
+    return Colorify(ESC, YELLOW, p_str, RESET);
 }

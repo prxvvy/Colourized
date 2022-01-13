@@ -2,11 +2,10 @@
     "name": "colorized",
     "version": "0.1.0",
     "description": "Color your Node.js console.",
-    "main": "index.js",
     "gypfile": true,
     "scripts": {
         "start": "node dist",
-        "dev": "ts-node-dev --watch -- index.ts",
+        "dev": "ts-node-dev --watch -- ./test",
         "build": "tsc"
     },
     "author": "prxvvy",

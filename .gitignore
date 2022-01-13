@@ -5,5 +5,5 @@ Makefile
 tsconfig.json
 build/
 .git
-test/
 index.ts
+test/

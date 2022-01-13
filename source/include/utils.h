@@ -6,6 +6,6 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-char *concatenate(const char *p_str1, const char *p_str2, const char *ptr_str3);
+char *Colorify(char *p_esc, char *p_colorCode, char *p_input, char *p_default);
 
 #endif /* UTILS_H */

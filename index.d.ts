@@ -15,7 +15,7 @@
 
 declare namespace colorized_lib {
 	interface ColorizedFunction {
-		(...text: unknown[]): string;
+		(text: unknown): string;
 	}
 
 	export const red: ColorizedFunction;

@@ -18,20 +18,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 var bindings_1 = __importDefault(require("bindings"));
 var addon = (0, bindings_1["default"])('colorized_lib');
-function red() {
-    var text = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        text[_i] = arguments[_i];
-    }
+function red(text) {
     if (!text)
         throw new Error('1 argument expected.');
     return addon.red(text);
 }
-function yellow() {
-    var text = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        text[_i] = arguments[_i];
-    }
+function yellow(text) {
     if (!text)
         throw new Error('1 argument expected.');
     return addon.yellow(text);

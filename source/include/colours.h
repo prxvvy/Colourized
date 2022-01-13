@@ -6,10 +6,8 @@
 #ifndef COLOURS_H
 #define COLOURS_H
 
-char *Red(char *str);
+char *Red(char *p_str);
 
-char *Yellow(char *str);
-
-char *Clean();
+char *Yellow(char *p_str);
 
 #endif /* COLOURS_H */
