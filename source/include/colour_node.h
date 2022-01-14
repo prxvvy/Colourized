@@ -29,5 +29,9 @@ napi_value RedIt(napi_env env, napi_callback_info info);
 
 napi_value YellowIt(napi_env env, napi_callback_info info);
 
+napi_value GreenIt(napi_env env, napi_callback_info info);
+
+napi_value BlueIt(napi_env env, napi_callback_info info);
+
 #endif /* COLOUR_NODE_H */
 

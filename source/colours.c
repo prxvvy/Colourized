@@ -15,7 +15,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include "include/colours.h" 
 #include "include/colours.h"
 #include "include/utils.h"
 #include "include/color_codes.h"
@@ -26,4 +25,12 @@ char *Red(char *p_str) {
 
 char *Yellow(char *p_str) {
     return Colorify(ESC, YELLOW, p_str, RESET);
+}
+
+char *Green(char *p_str) {
+    return Colorify(ESC, GREEN, p_str, RESET);
+}
+
+char *Blue(char *p_str) {
+    return Colorify(ESC, BLUE, p_str, RESET);
 }

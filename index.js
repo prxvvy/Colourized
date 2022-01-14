@@ -30,7 +30,19 @@ function yellow(text) {
         throw new Error('1 argument expected.');
     return addon.yellow(text);
 }
+function green(text) {
+    if (!text)
+        throw new Error('1 arguement expected.');
+    return addon.green(text);
+}
+function blue(text) {
+    if (!text)
+        throw new Error('1 arguement expected.');
+    return addon.blue(text);
+}
 module.exports = {
     red: red,
-    yellow: yellow
+    yellow: yellow,
+    green: green,
+    blue: blue
 };

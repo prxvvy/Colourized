@@ -27,4 +27,8 @@ char *Red(char *p_str);
 
 char *Yellow(char *p_str);
 
+char *Green(char *p_str);
+
+char *Blue(char *p_str);
+
 #endif /* COLOURS_H */
