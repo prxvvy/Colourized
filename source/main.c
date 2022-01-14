@@ -58,7 +58,6 @@ napi_value Init(napi_env env, napi_value exports) {
         napi_throw_error(env, NULL, "Unable to populate exports.");
     }
 
-
     return exports;
 }
 
