@@ -9,7 +9,7 @@
         "build": "tsc"
     },
     "author": "prxvvy",
-    "license": "ISC",
+    "license": "GPL-3.0-or-later",
     "devDependencies": {
         "@types/bindings": "^1.5.1",
         "@types/node": "^17.0.8",
