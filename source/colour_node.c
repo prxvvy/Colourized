@@ -15,7 +15,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <node/node_api.h>
+#include <node_api.h>
 #include <stdlib.h>
 #include <string.h>
 #include "include/colours.h"

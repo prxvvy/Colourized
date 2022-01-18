@@ -23,7 +23,7 @@
 #ifndef COLOUR_NODE_H
 #define COLOUR_NODE_H
 
-#include <node/node_api.h>
+#include <node_api.h>
 #include "color_codes.h"
 
 napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour);

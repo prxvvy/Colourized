@@ -1,6 +1,6 @@
 {
     "name": "colourized",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Color your Node.js console.",
     "gypfile": true,
     "scripts": {
@@ -16,6 +16,7 @@
         "prettier": "^2.5.1",
         "ts-node-dev": "^1.1.8"
     },
+    "keywords": ["Colours", "Nodejs", "Colours output"],
     "dependencies": {
         "bindings": "^1.5.0"
     }
