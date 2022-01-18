@@ -32,6 +32,6 @@ console.log(color.blue('Hello World! This output is gonna be blue.'));
 console.log(color.black('Hello World! This output is gonna be black.'));        
 console.log(color.magenta('Hello World! This output is gonna be magenta.'));  
 ```
-![](/sreenshots/a.jpg "Colors")
+![](https://github.com/prxvvy/Colourized/blob/master/screenshots/a.jpg "Colors")
 
 Soon, there'll be more functions for more colours and styles and also extend ```String.proto```

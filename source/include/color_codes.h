@@ -1,4 +1,4 @@
-/* Colorized - A program to add colour to Node.js console output. 
+/* Colourized - A program to add colour to Node.js console output. 
  * Copyright (C) 2021 prxvvy <qsk55464@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify

@@ -1,5 +1,5 @@
 {
-    "name": "colorized",
+    "name": "colourized",
     "version": "0.1.0",
     "description": "Color your Node.js console.",
     "gypfile": true,
