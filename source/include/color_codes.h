@@ -23,6 +23,15 @@
 #ifndef COLOR_CODES_H
 #define COLOR_CODES_H
 
+typedef enum COLOURS {
+	RED_,
+	BLUE_,
+	YELLOW_,
+	GREEN_,
+	BLACK_,
+	MAGENTA_
+} Colours;
+
 // Foreground
 #define RED "[31m"
 #define YELLOW "[33m"

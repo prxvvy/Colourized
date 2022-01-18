@@ -31,4 +31,8 @@ char *Green(char *p_str);
 
 char *Blue(char *p_str);
 
+char *Black(char *p_str);
+
+char *Magenta(char *p_str);
+
 #endif /* COLOURS_H */

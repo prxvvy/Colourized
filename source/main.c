@@ -58,6 +58,24 @@ napi_value Init(napi_env env, napi_value exports) {
         napi_throw_error(env, NULL, "Unable to populate exports.");
     }
 
+    status = napi_create_function(env, NULL, 0, BlackIt, NULL, &func);
+    if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to wrap native function.");
+    }
+    status = napi_set_named_property(env, exports, "black", func);
+    if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to populate exports.");
+    }
+
+    status = napi_create_function(env, NULL, 0, MagentaIt, NULL, &func);
+    if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to wrap native function.");
+    }
+    status = napi_set_named_property(env, exports, "magenta", func);
+    if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to populate exports.");
+    }
+
     return exports;
 }
 

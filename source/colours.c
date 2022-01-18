@@ -34,3 +34,11 @@ char *Green(char *p_str) {
 char *Blue(char *p_str) {
     return Colorify(ESC, BLUE, p_str, RESET);
 }
+
+char *Black(char *p_str) {
+    return Colorify(ESC, BLACK, p_str, RESET);
+}
+
+char *Magenta(char *p_str) {
+    return Colorify(ESC, MAGENTA, p_str, RESET);
+}

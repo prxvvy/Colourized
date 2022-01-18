@@ -24,6 +24,9 @@
 #define COLOUR_NODE_H
 
 #include <node/node_api.h>
+#include "color_codes.h"
+
+napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour);
 
 napi_value RedIt(napi_env env, napi_callback_info info);
 
@@ -32,6 +35,10 @@ napi_value YellowIt(napi_env env, napi_callback_info info);
 napi_value GreenIt(napi_env env, napi_callback_info info);
 
 napi_value BlueIt(napi_env env, napi_callback_info info);
+
+napi_value BlackIt(napi_env env, napi_callback_info info);
+
+napi_value MagentaIt(napi_env env, napi_callback_info info);
 
 #endif /* COLOUR_NODE_H */
 

@@ -27,6 +27,10 @@ declare namespace colorized_lib {
 	export const green: ColorizedFunction;
 
 	export const blue: ColorizedFunction;
+
+	export const black: ColorizedFunction;
+
+	export const magenta: ColorizedFunction;
 }
 
 export = colorized_lib;
