@@ -29,7 +29,8 @@ typedef enum COLOURS {
 	YELLOW_,
 	GREEN_,
 	BLACK_,
-	MAGENTA_
+	MAGENTA_,
+	BGRED_,
 } Colours;
 
 // Foreground
@@ -39,6 +40,8 @@ typedef enum COLOURS {
 #define BLACK "[30m"
 #define BLUE "[34m"
 #define MAGENTA "[35m"
+// Background
+#define BGRED "[41m"
 // ESC 
 #define ESC "\033"
 // Reset

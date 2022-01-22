@@ -23,10 +23,14 @@ console.log(color.green('Hello World! This output is gonna be green.'));
 console.log(color.blue('Hello World! This output is gonna be blue.'));
 console.log(color.black('Hello World! This output is gonna be black.'));
 console.log(color.magenta('Hello World! This output is gonna be magenta.'));
+console.log(
+	color.black.bgRed(
+		'Hello World! This output is gonna be black font with red background.'
+	)
+);
 ```
 
-Using Typescript?
-It comes with typings so no worries. So gotta to import it as a default import
+Typescript?
 
 ```ts
 import color from 'Colourized';
@@ -37,8 +41,28 @@ console.log(color.green('Hello World! This output is gonna be green.'));
 console.log(color.blue('Hello World! This output is gonna be blue.'));
 console.log(color.black('Hello World! This output is gonna be black.'));
 console.log(color.magenta('Hello World! This output is gonna be magenta.'));
+console.log(
+	color.black.bgRed(
+		'Hello World! This output is gonna be black font with red background.'
+	)
+);
 ```
 
 ![](https://github.com/prxvvy/Colourized/blob/master/screenshots/a.jpg 'Colors')
 
 Soon, there'll be more functions for more colours and styles and also extend `String.proto`
+
+## Licensing
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.

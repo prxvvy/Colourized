@@ -16,21 +16,31 @@
  */
 
 declare namespace colorized_lib {
-	interface ColorizedFunction {
-		(text: unknown): string;
+	export interface ColorizedFunction {
+		(text: string): string;
+
+		// Foreground
+		black: ColorizedFunction;
+		red: ColorizedFunction;
+		yellow: ColorizedFunction;
+		green: ColorizedFunction;
+		blue: ColorizedFunction;
+		magenta: ColorizedFunction;
+
+		// Background
+		bgRed: ColorizedFunction;
 	}
 
-	export const red: ColorizedFunction;
-
-	export const yellow: ColorizedFunction;
-
-	export const green: ColorizedFunction;
-
-	export const blue: ColorizedFunction;
-
+	// Foreground
 	export const black: ColorizedFunction;
-
+	export const red: ColorizedFunction;
+	export const yellow: ColorizedFunction;
+	export const green: ColorizedFunction;
+	export const blue: ColorizedFunction;
 	export const magenta: ColorizedFunction;
+
+	// Background
+	export const bgRed: ColorizedFunction;
 }
 
 export = colorized_lib;

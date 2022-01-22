@@ -5,6 +5,7 @@
     "gypfile": true,
     "scripts": {
         "start": "node dist",
+        "config": "node-gyp configure build",
         "dev": "ts-node-dev --watch -- ./test",
         "build": "tsc"
     },

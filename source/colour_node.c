@@ -18,6 +18,7 @@
 #include <node_api.h>
 #include <stdlib.h>
 #include <string.h>
+#include "include/colour_node.h"
 #include "include/colours.h"
 #include "include/color_codes.h"
 
@@ -48,7 +49,7 @@ napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
     if (status != napi_ok) {
         napi_throw_error(env, NULL, "String expected.");
         return NULL;
-    }
+    } 
 
     char *p_colouredString;
 
@@ -71,13 +72,15 @@ napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
         case MAGENTA_:
             p_colouredString = Magenta(p_buf);
             break;
+        case BGRED_:
+            p_colouredString = BgRed(p_buf);
         default:
             break;
     }
 
     napi_value res;
 
-    status = napi_create_string_utf8(env, p_colouredString, strlen(p_colouredString), &res);
+    status = napi_create_string_utf8(env, p_colouredString, strlen(p_colouredString) + 1, &res);
     if (status != napi_ok) {
         napi_throw_error(env, NULL, "Unabled to create return value.");
         return NULL;
@@ -112,4 +115,8 @@ napi_value BlackIt(napi_env env, napi_callback_info info) {
 
 napi_value MagentaIt(napi_env  env, napi_callback_info info) {
     return ColourIt(env, info, MAGENTA_);
+}
+
+napi_value BgRedIt(napi_env  env, napi_callback_info info) {
+    return ColourIt(env, info, BGRED_);
 }

@@ -40,5 +40,7 @@ napi_value BlackIt(napi_env env, napi_callback_info info);
 
 napi_value MagentaIt(napi_env env, napi_callback_info info);
 
+napi_value BgRedIt(napi_env env, napi_callback_info info);
+
 #endif /* COLOUR_NODE_H */
 

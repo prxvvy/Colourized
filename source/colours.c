@@ -42,3 +42,7 @@ char *Black(char *p_str) {
 char *Magenta(char *p_str) {
     return Colorify(ESC, MAGENTA, p_str, RESET);
 }
+
+char *BgRed(char *p_str) {
+    return Colorify(ESC, BGRED, p_str, RESET);
+}
