@@ -15,7 +15,7 @@ npm install colourized
 ## Using Colourized is ez
 
 ```js
-const color = require('Colourized');
+const color = require('colourized');
 
 console.log(color.red('Hello World! This output is gonna be red.'));
 console.log(color.yellow('Hello World! This output is gonna be yellow.'));
@@ -33,7 +33,7 @@ console.log(
 Typescript?
 
 ```ts
-import color from 'Colourized';
+import color from 'colourized';
 
 console.log(color.red('Hello World! This output is gonna be red.'));
 console.log(color.yellow('Hello World! This output is gonna be yellow.'));
@@ -54,7 +54,7 @@ Soon, there'll be more functions for more colours and styles and also extend `St
 
 ## Licensing
 
-This program is free software: you can redistribute it and/or modify
+`Colourized` is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
 (at your option) any later version.
