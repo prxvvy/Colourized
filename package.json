@@ -1,6 +1,6 @@
 {
     "name": "colourized",
-    "version": "0.1.3",
+    "version": "0.1.5",
     "description": "Color your Node.js console.",
     "gypfile": true,
     "scripts": {
