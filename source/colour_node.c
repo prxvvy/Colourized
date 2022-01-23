@@ -22,6 +22,17 @@
 #include "include/colours.h"
 #include "include/color_codes.h"
 
+void CreateNodeFunction(napi_status status, napi_value func, napi_callback cb, napi_env env, const char *utf8name, napi_value exports) {
+    status = napi_create_function(env, NULL, 0, cb, NULL, &func);
+    if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to wrap native function.");
+    }
+    status = napi_set_named_property(env, exports, utf8name, func);
+     if (status != napi_ok) {
+        napi_throw_error(env, NULL, "Unable to populate exports.");
+    }
+}
+
 napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
     napi_status status;
     size_t argc = 1;
@@ -77,6 +88,9 @@ napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
             break;
         case WHITE_:
             p_colouredString = White(p_buf);
+            break;
+        case CYAN_:
+            p_colouredString = Cyan(p_buf);
             break;
         case LIGHTRED_:
             p_colouredString = LightRed(p_buf);
@@ -134,6 +148,10 @@ napi_value YellowIt(napi_env env, napi_callback_info info) {
 
 napi_value GreenIt(napi_env env, napi_callback_info info) {
     return ColourIt(env, info, GREEN_);
+}
+
+napi_value CyanIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, CYAN_);
 }
 
 napi_value BlueIt(napi_env env, napi_callback_info info) {

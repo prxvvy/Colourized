@@ -29,6 +29,7 @@ declare namespace colorized_lib {
 		grey: ColorizedFunction;
 		gray: ColorizedFunction;
 		white: ColorizedFunction;
+		cyan: ColorizedFunction;
 		lightRed: ColorizedFunction;
 		lightYellow: ColorizedFunction;
 		lightBlue: ColorizedFunction;
@@ -53,6 +54,7 @@ declare namespace colorized_lib {
 	export const grey: ColorizedFunction;
 	export const gray: ColorizedFunction;
 	export const white: ColorizedFunction;
+	export const cyan: ColorizedFunction;
 	export const lightRed: ColorizedFunction;
 	export const lightYellow: ColorizedFunction;
 	export const lightBlue: ColorizedFunction;

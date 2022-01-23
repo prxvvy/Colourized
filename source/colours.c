@@ -51,6 +51,10 @@ char *White(char *p_str) {
     return Colorify(ESC, WHITE, p_str, RESET);
 }
 
+char *Cyan(char *p_str) {
+    return Colorify(ESC, CYAN, p_str, RESET);
+}
+
 char *LightRed(char *p_str) {
     return Colorify(ESC, LIGHTRED, p_str, RESET);
 }

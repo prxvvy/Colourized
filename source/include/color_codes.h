@@ -28,6 +28,7 @@ typedef enum COLOURS {
 	BLUE_,
 	YELLOW_,
 	GREEN_,
+	CYAN_,
 	BLACK_,
 	MAGENTA_,
 	GREY_,
@@ -54,6 +55,7 @@ typedef enum STYLES {
 #define GREEN "[32m"
 #define BLACK "[30m"
 #define BLUE "[34m"
+#define CYAN "[36m"
 #define MAGENTA "[35m"
 #define GREY "[90m"
 #define WHITE "[97m"

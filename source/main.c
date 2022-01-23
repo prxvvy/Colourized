@@ -22,159 +22,25 @@ napi_value Init(napi_env env, napi_value exports) {
     napi_status status;
     napi_value func;
     
-    status = napi_create_function(env, NULL, 0, RedIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "red", func);
-     if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, YellowIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "yellow", func);
-     if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, GreenIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "green", func);
-     if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, BlueIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "blue", func);
-     if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, BlackIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "black", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, MagentaIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "magenta", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, BgRedIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "bgRed", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, GreyIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "grey", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, WhiteIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "white", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightRedIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightRed", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightYellowIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightYellow", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightGreenIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightGreen", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-    
-    status = napi_create_function(env, NULL, 0, LightBlueIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightBlue", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightGreyIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightGrey", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightCyanIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightCyan", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightMagentaIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightMagenta", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
-    status = napi_create_function(env, NULL, 0, LightWhiteIt, NULL, &func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to wrap native function.");
-    }
-    status = napi_set_named_property(env, exports, "lightWhite", func);
-    if (status != napi_ok) {
-        napi_throw_error(env, NULL, "Unable to populate exports.");
-    }
-
+    CreateNodeFunction(status, func, CyanIt, env, "cyan", exports);
+    CreateNodeFunction(status, func, RedIt, env, "red", exports);
+    CreateNodeFunction(status, func, YellowIt, env, "yellow", exports);
+    CreateNodeFunction(status, func, GreenIt, env, "green", exports);
+    CreateNodeFunction(status, func, BlueIt, env, "blue", exports);
+    CreateNodeFunction(status, func, BlackIt, env, "black", exports);
+    CreateNodeFunction(status, func, MagentaIt, env, "magenta", exports);
+    CreateNodeFunction(status, func, GreyIt, env, "grey", exports);
+    CreateNodeFunction(status, func, WhiteIt, env, "white", exports);
+    CreateNodeFunction(status, func, LightRedIt, env, "lightRed", exports);
+    CreateNodeFunction(status, func, LightYellowIt, env, "lightYellow", exports);
+    CreateNodeFunction(status, func, LightGreenIt, env, "lightGreen", exports);
+    CreateNodeFunction(status, func, LightBlueIt, env, "lightBlue", exports);
+    CreateNodeFunction(status, func, LightGreyIt, env, "lightGrey", exports);
+    CreateNodeFunction(status, func, LightCyanIt, env, "lightCyan", exports);
+    CreateNodeFunction(status, func, LightMagentaIt, env, "lightMagenta", exports);
+    CreateNodeFunction(status, func, LightWhiteIt, env, "lightWhite", exports);
+    CreateNodeFunction(status, func, BgRedIt, env, "bgRed", exports);
+        
     return exports;
 }
 

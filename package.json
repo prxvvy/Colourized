@@ -1,9 +1,8 @@
 {
     "name": "colourized",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Color your Node.js console.",
     "gypfile": true,
-    "main": "index.js",
     "scripts": {
         "start": "node dist",
         "config": "node-gyp configure build",

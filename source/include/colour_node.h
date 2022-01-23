@@ -26,6 +26,8 @@
 #include <node_api.h>
 #include "color_codes.h"
 
+void CreateNodeFunction(napi_status status, napi_value func, napi_callback cb, napi_env env, const char *utf8name, napi_value exports);
+
 napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour);
 
 napi_value RedIt(napi_env env, napi_callback_info info);
@@ -44,6 +46,8 @@ napi_value GreyIt(napi_env env, napi_callback_info info);
 
 napi_value WhiteIt(napi_env env, napi_callback_info info);
 
+napi_value CyanIt(napi_env env, napi_callback_info info);
+
 napi_value LightRedIt(napi_env env, napi_callback_info info);
 
 napi_value LightYellowIt(napi_env env, napi_callback_info info);
@@ -59,7 +63,6 @@ napi_value LightCyanIt(napi_env env, napi_callback_info info);
 napi_value LightMagentaIt(napi_env env, napi_callback_info info);
 
 napi_value LightWhiteIt(napi_env env, napi_callback_info info);
-
 
 napi_value BgRedIt(napi_env env, napi_callback_info info);
 
