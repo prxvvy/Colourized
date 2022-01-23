@@ -4,6 +4,7 @@ package-lock.json
 Makefile
 tsconfig.json
 build/
-.git
+.git/
 index.ts
 test/
+lib/
