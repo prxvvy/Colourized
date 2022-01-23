@@ -59,5 +59,23 @@ char *LightWhite(char *p_str);
 
 char *BgRed(char *p_str);
 
+char *BgBlack(char *p_str);
+
+char *BgGreen(char *p_str);
+
+char *BgYellow(char *p_str);
+
+char *BgBlue(char *p_str);
+
+char *BgMagenta(char *p_str);
+
+char *BgCyan(char *p_str);
+
+char *BgWhite(char *p_str);
+
+char *BgGrey(char *p_str);
+
+char *Underline(char *p_str);
+
 
 #endif /* COLOURS_H */

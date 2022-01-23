@@ -24,6 +24,7 @@
 #define COLOR_CODES_H
 
 typedef enum COLOURS {
+	// Foreground
 	RED_,
 	BLUE_,
 	YELLOW_,
@@ -41,13 +42,19 @@ typedef enum COLOURS {
 	LIGHTCYAN_,
 	LIGHTMAGENTA_,
 	LIGHTWHITE_,
-
+	// Background
 	BGRED_,
-} Colours;
-
-typedef enum STYLES {
+	BGBLACK_,
+	BGGREEN_,
+	BGYELLOW_,
+	BGBLUE_,
+	BGMAGENTA_,
+	BGCYAN_,
+	BGWHITE_,
+	BGGREY_,
+	// Styles (Couldn't use other enum)
 	UNDERLINE_,
-} Styles;
+} Colours;
 
 // Foreground
 #define RED "[31m"
@@ -70,8 +77,17 @@ typedef enum STYLES {
 
 // Background
 #define BGRED "[41m"
+#define BGBLACK "[40m"
+#define BGGREEN "[42m"
+#define BGYELLOW "[43m"
+#define BGBLUE "[44m"
+#define BGMAGENTA "[45m"
+#define BGCYAN "[46m"
+#define BGWHITE "[107m"
+#define BGGREY "[100m"
 
 // Styles
+#define UNDERLINE "[4m"
 
 // ESC 
 #define ESC "\033"

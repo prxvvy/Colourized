@@ -91,4 +91,38 @@ char *BgRed(char *p_str) {
     return Colorify(ESC, BGRED, p_str, RESET);
 }
 
+char *BgBlack(char *p_str) {
+    return Colorify(ESC, BGBLACK, p_str, RESET);
+}
 
+char *BgGreen(char *p_str) {
+    return Colorify(ESC, BGGREEN, p_str, RESET);
+}
+
+char *BgYellow(char *p_str) {
+    return Colorify(ESC, BGYELLOW, p_str, RESET);
+}
+
+char *BgBlue(char *p_str) {
+    return Colorify(ESC, BGBLUE, p_str, RESET);
+}
+
+char *BgMagenta(char *p_str) {
+    return Colorify(ESC, BGMAGENTA, p_str, RESET);
+}
+
+char *BgCyan(char *p_str) {
+    return Colorify(ESC, BGCYAN, p_str, RESET);
+}
+
+char *BgWhite(char *p_str) {
+    return Colorify(ESC, BGWHITE, p_str, RESET);
+}
+
+char *BgGrey(char *p_str) {
+    return Colorify(ESC, BGGREY, p_str, RESET);
+}
+
+char *Underline(char *p_str) {
+    return Colorify(ESC, UNDERLINE, p_str, RESET);
+}

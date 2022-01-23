@@ -12,7 +12,47 @@ An **open source** and easy-to-use library to colour your [Node.js](https://node
 npm install colourized
 ```
 
-## Using Colourized is ez
+### Text colours
+
+-   red
+-   black
+-   magenta
+-   cyan
+-   white
+-   grey (gray)
+-   blue
+-   green
+-   yellow
+
+### Light text colours
+
+-   lightRed
+-   lightBlack
+-   lightYellow
+-   lightWhite
+-   lightCyan
+-   lightGrey (lightGray)
+-   lightMagenta
+-   lightBlue
+-   lightGreen
+
+### Background colours
+
+-   bgRed
+-   bgBlack
+-   bgCyan
+-   bgGrey (bgGray)
+-   bgWhite
+-   bgBlue
+-   bgGreen
+-   bgMagenta
+-   bgYellow
+
+### Styles
+
+-   underline
+
+## Usage
 
 ```js
 const color = require('colourized');
@@ -49,8 +89,6 @@ console.log(
 ```
 
 ![](https://github.com/prxvvy/Colourized/blob/master/screenshots/a.jpg 'Colors')
-
-Soon, there'll be more functions for more colours and styles and also extend `String.proto`
 
 ## Licensing
 

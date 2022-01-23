@@ -42,6 +42,17 @@ declare namespace colorized_lib {
 
 		// Background
 		bgRed: ColorizedFunction;
+		bgBlack: ColorizedFunction;
+		bgGreen: ColorizedFunction;
+		bgYellow: ColorizedFunction;
+		bgBlue: ColorizedFunction;
+		bgMagenta: ColorizedFunction;
+		bgCyan: ColorizedFunction;
+		bgWhite: ColorizedFunction;
+		bgGrey: ColorizedFunction;
+		bgGray: ColorizedFunction;
+		// Styles
+		underline: ColorizedFunction;
 	}
 
 	// Foreground
@@ -67,6 +78,17 @@ declare namespace colorized_lib {
 
 	// Background
 	export const bgRed: ColorizedFunction;
+	export const bgBlack: ColorizedFunction;
+	export const bgGreen: ColorizedFunction;
+	export const bgYellow: ColorizedFunction;
+	export const bgBlue: ColorizedFunction;
+	export const bgMagenta: ColorizedFunction;
+	export const bgCyan: ColorizedFunction;
+	export const bgWhite: ColorizedFunction;
+	export const bgGrey: ColorizedFunction;
+	export const bgGray: ColorizedFunction;
+	// Styles
+	export const underline: ColorizedFunction;
 }
 
 export = colorized_lib;

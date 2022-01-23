@@ -40,6 +40,15 @@ napi_value Init(napi_env env, napi_value exports) {
     CreateNodeFunction(status, func, LightMagentaIt, env, "lightMagenta", exports);
     CreateNodeFunction(status, func, LightWhiteIt, env, "lightWhite", exports);
     CreateNodeFunction(status, func, BgRedIt, env, "bgRed", exports);
+    CreateNodeFunction(status, func, BgBlackIt, env, "bgBlack", exports);
+    CreateNodeFunction(status, func, BgGreenIt, env, "bgGreen", exports);
+    CreateNodeFunction(status, func, BgYellowIt, env, "bgYellow", exports);
+    CreateNodeFunction(status, func, BgBlueIt, env, "bgBlue", exports);
+    CreateNodeFunction(status, func, BgMagentaIt, env, "bgMagenta", exports);
+    CreateNodeFunction(status, func, BgCyanIt, env, "bgCyan", exports);
+    CreateNodeFunction(status, func, BgWhiteIt, env, "bgWhite", exports);
+    CreateNodeFunction(status, func, BgGreyIt, env, "bgGrey", exports);
+    CreateNodeFunction(status, func, UnderlineIt, env, "underline", exports);
         
     return exports;
 }

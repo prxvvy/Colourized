@@ -42,12 +42,24 @@ var colours = {
     lightMagenta: addon.lightMagenta,
     lightWhite: addon.lightWhite,
     // Background
-    bgRed: addon.bgRed
+    bgRed: addon.bgRed,
+    bgBlack: addon.bgBlack,
+    bgGreen: addon.bgGreen,
+    bgYellow: addon.bgYellow,
+    bgBlue: addon.bgBlue,
+    bgMagenta: addon.bgMagenta,
+    bgCyan: addon.bgCyan,
+    bgWhite: addon.bgWhite,
+    bgGrey: addon.bgGrey,
+    bgGray: addon.bgGrey
+};
+var styles = {
+    underline: addon.underline
 };
 var Colourized = /** @class */ (function () {
     function Colourized() {
         this.str = [];
-        var ref = Object.assign({}, colours);
+        var ref = Object.assign({}, colours, styles);
         var all = Object.keys(ref);
         all.forEach(function (func) {
             var _a;
@@ -65,6 +77,8 @@ var Colourized = /** @class */ (function () {
                                 var func_1 = _a[_i];
                                 text = func_1(text);
                             }
+                            // @ts-ignore
+                            _this.str = [];
                             return text;
                         };
                         colorIt.__proto__ = this;
