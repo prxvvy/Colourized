@@ -35,6 +35,27 @@ char *Black(char *p_str);
 
 char *Magenta(char *p_str);
 
+char *Grey(char *p_str);
+
+char *White(char *p_str);
+
+char *LightRed(char *p_str);
+
+char *LightYellow(char *p_str);
+
+char *LightGreen(char *p_str);
+
+char *LightBlue(char *p_str);
+
+char *LightGrey(char *p_str);
+
+char *LightCyan(char *p_str);
+
+char *LightMagenta(char *p_str);
+
+char *LightWhite(char *p_str);
+
 char *BgRed(char *p_str);
+
 
 #endif /* COLOURS_H */

@@ -43,6 +43,48 @@ char *Magenta(char *p_str) {
     return Colorify(ESC, MAGENTA, p_str, RESET);
 }
 
+char *Grey(char *p_str) {
+    return Colorify(ESC, GREY, p_str, RESET);
+}
+
+char *White(char *p_str) {
+    return Colorify(ESC, WHITE, p_str, RESET);
+}
+
+char *LightRed(char *p_str) {
+    return Colorify(ESC, LIGHTRED, p_str, RESET);
+}
+
+char *LightYellow(char *p_str) {
+    return Colorify(ESC, LIGHTYELLOW, p_str, RESET);
+}
+
+char *LightGreen(char *p_str) {
+    return Colorify(ESC, LIGHTGREEN, p_str, RESET);
+}
+
+char *LightBlue(char *p_str) {
+    return Colorify(ESC, LIGHTBLUE, p_str, RESET);
+}
+
+char *LightGrey(char *p_str) {
+    return Colorify(ESC, LIGHTGREY, p_str, RESET);
+}
+
+char *LightCyan(char *p_str) {
+    return Colorify(ESC, LIGHTCYAN, p_str, RESET);
+}
+
+char *LightMagenta(char *p_str) {
+    return Colorify(ESC, LIGHTMAGENTA, p_str, RESET);
+}
+
+char *LightWhite(char *p_str) {
+    return Colorify(ESC, LIGHTWHITE, p_str, RESET);
+}
+
 char *BgRed(char *p_str) {
     return Colorify(ESC, BGRED, p_str, RESET);
 }
+
+

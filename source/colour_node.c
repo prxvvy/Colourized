@@ -72,9 +72,41 @@ napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
         case MAGENTA_:
             p_colouredString = Magenta(p_buf);
             break;
+        case GREY_:
+            p_colouredString = Grey(p_buf);
+            break;
+        case WHITE_:
+            p_colouredString = White(p_buf);
+            break;
+        case LIGHTRED_:
+            p_colouredString = LightRed(p_buf);
+            break;
+        case LIGHTYELLOW_:
+            p_colouredString = LightYellow(p_buf);
+            break;
+        case LIGHTGREEN_:
+            p_colouredString = LightGreen(p_buf);
+            break;
+        case LIGHTBLUE_:
+            p_colouredString = LightBlue(p_buf);
+            break;
+        case LIGHTGREY_:
+            p_colouredString = LightGrey(p_buf);
+            break;
+        case LIGHTCYAN_:
+            p_colouredString = LightCyan(p_buf);
+            break;
+        case LIGHTMAGENTA_:
+            p_colouredString = LightMagenta(p_buf);
+            break;
+        case LIGHTWHITE_:
+            p_colouredString = LightWhite(p_buf);
+            break;
         case BGRED_:
             p_colouredString = BgRed(p_buf);
+            break;
         default:
+            p_colouredString = NULL;
             break;
     }
 
@@ -91,7 +123,6 @@ napi_value ColourIt(napi_env env, napi_callback_info info, Colours colour) {
     return res;
 
 }
-
 
 napi_value RedIt(napi_env env, napi_callback_info info) {
     return ColourIt(env, info, RED_);
@@ -117,6 +148,46 @@ napi_value MagentaIt(napi_env  env, napi_callback_info info) {
     return ColourIt(env, info, MAGENTA_);
 }
 
+napi_value GreyIt(napi_env  env, napi_callback_info info) {
+    return ColourIt(env, info, GREY_);
+}
+
+napi_value WhiteIt(napi_env  env, napi_callback_info info) {
+    return ColourIt(env, info, WHITE_);
+}
+
 napi_value BgRedIt(napi_env  env, napi_callback_info info) {
     return ColourIt(env, info, BGRED_);
+}
+
+napi_value LightRedIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTRED_);
+}
+
+napi_value LightYellowIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTYELLOW_);
+}
+
+napi_value LightGreenIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTGREEN_);
+}
+
+napi_value LightBlueIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTBLUE_);
+}
+
+napi_value LightGreyIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTGREY_);
+}
+
+napi_value LightCyanIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTCYAN_);
+}
+
+napi_value LightMagentaIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTMAGENTA_);
+}
+
+napi_value LightWhiteIt(napi_env env, napi_callback_info info) {
+    return ColourIt(env, info, LIGHTWHITE_);
 }

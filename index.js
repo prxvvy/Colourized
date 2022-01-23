@@ -28,6 +28,18 @@ var colours = {
     green: addon.green,
     blue: addon.blue,
     magenta: addon.magenta,
+    grey: addon.grey,
+    gray: addon.grey,
+    white: addon.white,
+    lightRed: addon.lightRed,
+    lightYellow: addon.lightYellow,
+    lightGreen: addon.lightGreen,
+    lightBlue: addon.lightBlue,
+    lightGrey: addon.lightGrey,
+    lightGray: addon.lightGrey,
+    lightCyan: addon.lightCyan,
+    lightMagenta: addon.lightMagenta,
+    lightWhite: addon.lightWhite,
     // Background
     bgRed: addon.bgRed
 };

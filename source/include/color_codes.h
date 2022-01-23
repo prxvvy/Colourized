@@ -30,8 +30,23 @@ typedef enum COLOURS {
 	GREEN_,
 	BLACK_,
 	MAGENTA_,
+	GREY_,
+	WHITE_,
+	LIGHTRED_,
+	LIGHTYELLOW_,
+	LIGHTGREEN_,
+	LIGHTBLUE_,
+	LIGHTGREY_,
+	LIGHTCYAN_,
+	LIGHTMAGENTA_,
+	LIGHTWHITE_,
+
 	BGRED_,
 } Colours;
+
+typedef enum STYLES {
+	UNDERLINE_,
+} Styles;
 
 // Foreground
 #define RED "[31m"
@@ -40,8 +55,22 @@ typedef enum COLOURS {
 #define BLACK "[30m"
 #define BLUE "[34m"
 #define MAGENTA "[35m"
+#define GREY "[90m"
+#define WHITE "[97m"
+#define LIGHTRED "[91m"
+#define LIGHTYELLOW "[93m"
+#define LIGHTGREEN "[92m"
+#define LIGHTBLUE "[94m"
+#define LIGHTGREY "[37m"
+#define LIGHTCYAN "[96m"
+#define LIGHTMAGENTA "[95m"
+#define LIGHTWHITE "[97m"
+
 // Background
 #define BGRED "[41m"
+
+// Styles
+
 // ESC 
 #define ESC "\033"
 // Reset

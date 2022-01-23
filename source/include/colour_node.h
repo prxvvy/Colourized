@@ -40,6 +40,27 @@ napi_value BlackIt(napi_env env, napi_callback_info info);
 
 napi_value MagentaIt(napi_env env, napi_callback_info info);
 
+napi_value GreyIt(napi_env env, napi_callback_info info);
+
+napi_value WhiteIt(napi_env env, napi_callback_info info);
+
+napi_value LightRedIt(napi_env env, napi_callback_info info);
+
+napi_value LightYellowIt(napi_env env, napi_callback_info info);
+
+napi_value LightGreenIt(napi_env env, napi_callback_info info);
+
+napi_value LightBlueIt(napi_env env, napi_callback_info info);
+
+napi_value LightGreyIt(napi_env env, napi_callback_info info);
+
+napi_value LightCyanIt(napi_env env, napi_callback_info info);
+
+napi_value LightMagentaIt(napi_env env, napi_callback_info info);
+
+napi_value LightWhiteIt(napi_env env, napi_callback_info info);
+
+
 napi_value BgRedIt(napi_env env, napi_callback_info info);
 
 #endif /* COLOUR_NODE_H */
