@@ -51,10 +51,23 @@ var colours = {
     bgCyan: addon.bgCyan,
     bgWhite: addon.bgWhite,
     bgGrey: addon.bgGrey,
-    bgGray: addon.bgGrey
+    bgGray: addon.bgGrey,
+    bgLightRed: addon.bgLightRed,
+    bgLightGreen: addon.bgLightGreen,
+    bgLightYellow: addon.bgLightYellow,
+    bgLightBlue: addon.bgLightBlue,
+    bgLightMagenta: addon.bgLightMagenta,
+    bgLightCyan: addon.bgLightCyan,
+    bgLightWhite: addon.bgLightWhite,
+    bgLightGrey: addon.bgLightGrey,
+    bgLightGray: addon.bgLightGrey
 };
 var styles = {
-    underline: addon.underline
+    underline: addon.underline,
+    bold: addon.bold,
+    dim: addon.dim,
+    italic: addon.italic,
+    inverse: addon.inverse
 };
 var Colourized = /** @class */ (function () {
     function Colourized() {

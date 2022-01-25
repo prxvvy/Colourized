@@ -52,8 +52,20 @@ typedef enum COLOURS {
 	BGCYAN_,
 	BGWHITE_,
 	BGGREY_,
+	BGLIGHTRED_,
+	BGLIGHTGREEN_,
+	BGLIGHTYELLOW_,
+	BGLIGHTBLUE_,
+	BGLIGHTMAGENTA_,
+	BGLIGHTCYAN_,
+	BGLIGHTWHITE_,
+	BGLIGHTGREY_,
 	// Styles (Couldn't use other enum)
 	UNDERLINE_,
+	BOLD_,
+	DIM_,
+	ITALIC_,
+	INVERSE_,
 } Colours;
 
 // Foreground
@@ -86,8 +98,21 @@ typedef enum COLOURS {
 #define BGWHITE "[107m"
 #define BGGREY "[100m"
 
+#define BGLIGHTRED "[101m"
+#define BGLIGHTGREEN "[102m"
+#define BGLIGHTYELLOW "[103m"
+#define BGLIGHTBLUE "[104m"
+#define BGLIGHTMAGENTA "[105m"
+#define BGLIGHTCYAN "[106m"
+#define BGLIGHTWHITE "[107m"
+#define BGLIGHTGREY "[47m"
+
 // Styles
 #define UNDERLINE "[4m"
+#define BOLD "[1m"
+#define DIM "[2m"
+#define ITALIC "[3m"
+#define INVERSE "[7m"
 
 // ESC 
 #define ESC "\033"

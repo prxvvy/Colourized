@@ -82,7 +82,30 @@ napi_value BgWhiteIt(napi_env env, napi_callback_info info);
 
 napi_value BgGreyIt(napi_env env, napi_callback_info info);
 
+napi_value BgLightRedIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightGreenIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightYellowIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightBlueIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightMagentaIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightCyanIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightWhiteIt(napi_env env, napi_callback_info info);
+
+napi_value BgLightGreyIt(napi_env env, napi_callback_info info);
+
 napi_value UnderlineIt(napi_env env, napi_callback_info info);
 
-#endif /* COLOUR_NODE_H */
+napi_value BoldIt(napi_env env, napi_callback_info info);
 
+napi_value DimIt(napi_env env, napi_callback_info info);
+
+napi_value ItalicIt(napi_env env, napi_callback_info info);
+
+napi_value InverseIt(napi_env env, napi_callback_info info);
+
+#endif /* COLOUR_NODE_H */

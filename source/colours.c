@@ -123,6 +123,54 @@ char *BgGrey(char *p_str) {
     return Colorify(ESC, BGGREY, p_str, RESET);
 }
 
+char *BgLightRed(char *p_str) {
+    return Colorify(ESC, BGLIGHTRED, p_str, RESET);
+}
+
+char *BgLightGreen(char *p_str) {
+    return Colorify(ESC, BGLIGHTGREEN, p_str, RESET);
+}
+
+char *BgLightYellow(char *p_str) {
+    return Colorify(ESC, BGLIGHTYELLOW, p_str, RESET);
+}
+
+char *BgLightBlue(char *p_str) {
+    return Colorify(ESC, BGLIGHTBLUE, p_str, RESET);
+}
+
+char *BgLightMagenta(char *p_str) {
+    return Colorify(ESC, BGLIGHTMAGENTA, p_str, RESET);
+}
+
+char *BgLightCyan(char *p_str) {
+    return Colorify(ESC, BGLIGHTCYAN, p_str, RESET);
+}
+
+char *BgLightWhite(char *p_str) {
+    return Colorify(ESC, BGLIGHTWHITE, p_str, RESET);
+}
+
+char *BgLightGrey(char *p_str) {
+    return Colorify(ESC, BGLIGHTGREY, p_str, RESET);
+}
+
 char *Underline(char *p_str) {
     return Colorify(ESC, UNDERLINE, p_str, RESET);
+}
+
+char *Bold(char *p_str) {
+    return Colorify(ESC, BOLD, p_str, RESET);
+}
+
+char *Dim(char *p_str) {
+    return Colorify(ESC, DIM, p_str, RESET);
+}
+
+char *Italic(char *p_str) {
+    return Colorify(ESC, ITALIC, p_str, RESET);
+}
+
+char *Inverse(char *p_str) {
+    return Colorify(ESC, INVERSE, p_str, RESET);
 }

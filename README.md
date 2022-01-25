@@ -48,9 +48,24 @@ npm install colourized
 -   bgMagenta
 -   bgYellow
 
+### Light Background colours
+
+-   bgLightRed
+-   bgLightCyan
+-   bgLightGrey (bgLightGray)
+-   bgLightWhite
+-   bgLightBlue
+-   bgLightGreen
+-   bgLightMagenta
+-   bgLightYellow
+
 ### Styles
 
 -   underline
+-   italic
+-   dim
+-   inverse
+-   bold
 
 ## Usage
 

@@ -75,7 +75,30 @@ char *BgWhite(char *p_str);
 
 char *BgGrey(char *p_str);
 
+char *BgLightRed(char *p_str);
+
+char *BgLightGreen(char *p_str);
+
+char *BgLightYellow(char *p_str);
+
+char *BgLightBlue(char *p_str);
+
+char *BgLightMagenta(char *p_str);
+
+char *BgLightCyan(char *p_str);
+
+char *BgLightWhite(char *p_str);
+
+char *BgLightGrey(char *p_str);
+
 char *Underline(char *p_str);
 
+char *Bold(char *p_str);
+
+char *Dim(char *p_str);
+
+char *Italic(char *p_str);
+
+char *Inverse(char *p_str);
 
 #endif /* COLOURS_H */
