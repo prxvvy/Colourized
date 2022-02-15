@@ -1,6 +1,6 @@
 "use strict";
 /* Colourized - A program to add colour to Node.js console output.
- * Copyright (C) 2021 prxvvy <qsk55464@gmail.com>
+ * Copyright (C) 2022 prxvvy <qsk55464@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -71,6 +71,7 @@ var styles = {
 };
 var Colourized = /** @class */ (function () {
     function Colourized() {
+        var _this = this;
         this.str = [];
         var ref = Object.assign({}, colours, styles);
         var all = Object.keys(ref);
@@ -78,24 +79,22 @@ var Colourized = /** @class */ (function () {
             var _a;
             var obj = (_a = {},
                 _a[func] = {
+                    str: _this.str,
                     get: function () {
                         var _this = this;
-                        // @ts-ignore
                         this.str.push(ref[func]);
-                        var colorIt = function (text) {
-                            if (!text)
+                        var colourIt = function (txt) {
+                            if (!txt)
                                 throw new Error('1 argument expected.');
-                            // @ts-ignore
                             for (var _i = 0, _a = _this.str.reverse(); _i < _a.length; _i++) {
-                                var func_1 = _a[_i];
-                                text = func_1(text);
+                                var funcName = _a[_i];
+                                txt = funcName(txt);
                             }
-                            // @ts-ignore
                             _this.str = [];
-                            return text;
+                            return txt;
                         };
-                        colorIt.__proto__ = this;
-                        return colorIt;
+                        colourIt.__proto__ = this;
+                        return colourIt;
                     }
                 },
                 _a);

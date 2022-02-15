@@ -1,5 +1,5 @@
-/* Colourized - A program to add colour to Node.js console output. 
- * Copyright (C) 2021 prxvvy <qsk55464@gmail.com>
+/* Colourized - A program to add colour to Node.js console output.
+ * Copyright (C) 2022 prxvvy <qsk55464@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,52 +20,53 @@
  * @created     : 13/01/2022
  * @filename    : color_codes
  */
+
 #ifndef COLOR_CODES_H
 #define COLOR_CODES_H
 
 typedef enum COLOURS {
-	// Foreground
-	RED_,
-	BLUE_,
-	YELLOW_,
-	GREEN_,
-	CYAN_,
-	BLACK_,
-	MAGENTA_,
-	GREY_,
-	WHITE_,
-	LIGHTRED_,
-	LIGHTYELLOW_,
-	LIGHTGREEN_,
-	LIGHTBLUE_,
-	LIGHTGREY_,
-	LIGHTCYAN_,
-	LIGHTMAGENTA_,
-	LIGHTWHITE_,
-	// Background
-	BGRED_,
-	BGBLACK_,
-	BGGREEN_,
-	BGYELLOW_,
-	BGBLUE_,
-	BGMAGENTA_,
-	BGCYAN_,
-	BGWHITE_,
-	BGGREY_,
-	BGLIGHTRED_,
-	BGLIGHTGREEN_,
-	BGLIGHTYELLOW_,
-	BGLIGHTBLUE_,
-	BGLIGHTMAGENTA_,
-	BGLIGHTCYAN_,
-	BGLIGHTWHITE_,
-	BGLIGHTGREY_,
-	// Styles (Couldn't use other enum)
-	UNDERLINE_,
-	BOLD_,
-	DIM_,
-	ITALIC_,
-	INVERSE_,
+   // Foreground
+   RED_,
+   BLUE_,
+   YELLOW_,
+   GREEN_,
+   CYAN_,
+   BLACK_,
+   MAGENTA_,
+   GREY_,
+   WHITE_,
+   LIGHTRED_,
+   LIGHTYELLOW_,
+   LIGHTGREEN_,
+   LIGHTBLUE_,
+   LIGHTGREY_,
+   LIGHTCYAN_,
+   LIGHTMAGENTA_,
+   LIGHTWHITE_,
+   // Background
+   BGRED_,
+   BGBLACK_,
+   BGGREEN_,
+   BGYELLOW_,
+   BGBLUE_,
+   BGMAGENTA_,
+   BGCYAN_,
+   BGWHITE_,
+   BGGREY_,
+   BGLIGHTRED_,
+   BGLIGHTGREEN_,
+   BGLIGHTYELLOW_,
+   BGLIGHTBLUE_,
+   BGLIGHTMAGENTA_,
+   BGLIGHTCYAN_,
+   BGLIGHTWHITE_,
+   BGLIGHTGREY_,
+   // Styles (Couldn't use other enum)
+   UNDERLINE_,
+   BOLD_,
+   DIM_,
+   ITALIC_,
+   INVERSE_,
 } Colours;
 
 // Foreground
@@ -114,7 +115,7 @@ typedef enum COLOURS {
 #define ITALIC "[3m"
 #define INVERSE "[7m"
 
-// ESC 
+// ESC
 #define ESC "\033"
 // Reset
 #define RESET "[0m"

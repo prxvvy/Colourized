@@ -15,15 +15,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-/**
- * @author      : prxvvy (qsk55464@gmail.com)
- * @created     : 10/01/2022
- * @filename    : utils
- */
-#ifndef UTILS_H
-#define UTILS_H
+//
+// Created by prxvvy on 15/02/2022
+//
 
-char *Concatenate(char *p_esc, char *p_colorCode, char *p_input,
-		  char *p_default);
+#ifndef COLOURIT_NODE_HPP
+#define COLOURIT_NODE_HPP
 
-#endif /* UTILS_H */
+#include <napi.h>
+
+extern "C" {
+#include "color_codes.h"
+}
+
+Napi::Value ColourIt(const Napi::CallbackInfo &info, Colours colour);
+
+#endif  // COLOURIT_NODE_HPP

@@ -1,11 +1,12 @@
 {
     "name": "colourized",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "Color your Node.js console.",
     "gypfile": true,
     "scripts": {
         "start": "node dist",
         "config": "node-gyp configure build",
+        "clean": "node-gyp clean",
         "dev": "ts-node-dev --watch -- ./test",
         "build": "tsc"
     },
@@ -28,6 +29,7 @@
     "keywords": ["Colours", "Nodejs", "Colours output"],
     "homepage": "https://github.com/prxvvy/Colourized#readme",
     "dependencies": {
-        "bindings": "^1.5.0"
+        "bindings": "^1.5.0",
+        "node-addon-api": "^4.3.0"
     }
 }
