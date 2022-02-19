@@ -8,6 +8,8 @@
 
 An **open source** and easy-to-use library to colour your [Node.js](https://nodejs.org/en/) console output.
 
+![colours](https://github.com/prxvvy/Colourized/blob/master/screenshots/a2.jpg 'a')
+
 ---
 
 ## Installation
