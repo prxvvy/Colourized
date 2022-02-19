@@ -19,6 +19,11 @@
 
 #include "include/colours_node.hpp"
 
+/**
+ * cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -B
+ * cmake-build-debug
+ */
+
 using namespace Napi;
 
 Object Init(Env env, Object exports) {
