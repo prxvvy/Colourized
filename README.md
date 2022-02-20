@@ -28,81 +28,26 @@ const color = require('colourized');
 
 ```js
 const color = require('colourized');
-/* const {red, bgRed} = require('colourized'); */
 /* import color from 'colourized'; */
-/* import {red, bgRed} from 'colourized'; */
 
-console.log(color.red('Hello World! This output is gonna be red.'));
-console.log(color.yellow('Hello World! This output is gonna be yellow.'));
-console.log(color.green('Hello World! This output is gonna be green.'));
-console.log(color.blue('Hello World! This output is gonna be blue.'));
-console.log(color.black('Hello World! This output is gonna be black.'));
-console.log(color.magenta('Hello World! This output is gonna be magenta.'));
-console.log(
-	color.black(
-		color.bgRed(
-			'Hello World! This output is gonna be black font with red background.'
-		)
-	)
-);
+color.red('Red text');
+color.red.bold('Red text and also bold');
+color.red.inverse('Inverted red text');
 ```
 
 ---
 
-### Text colours
-
--   red
--   black
--   magenta
--   cyan
--   white
--   grey (gray)
--   blue
--   green
--   yellow
-
-### Light text colours
-
--   lightRed
--   lightBlack
--   lightYellow
--   lightWhite
--   lightCyan
--   lightGrey (lightGray)
--   lightMagenta
--   lightBlue
--   lightGreen
-
-### Background colours
-
--   bgRed
--   bgBlack
--   bgCyan
--   bgGrey (bgGray)
--   bgWhite
--   bgBlue
--   bgGreen
--   bgMagenta
--   bgYellow
-
-### Light Background colours
-
--   bgLightRed
--   bgLightCyan
--   bgLightGrey (bgLightGray)
--   bgLightWhite
--   bgLightBlue
--   bgLightGreen
--   bgLightMagenta
--   bgLightYellow
-
-### Styles
-
--   underline
--   italic
--   dim
--   inverse
--   bold
+| Text colours | Light text colours    | Background colours | Light Background colours  | Styles    |
+| ------------ | --------------------- | ------------------ | ------------------------- | --------- |
+| red          | lightRed              | bgRed              | bgLightRed                | underline |
+| black        | lightBlack            | bgBlack            | bgLightCyan               | italic    |
+| magenta      | lightYellow           | bgCyan             | bgLightGrey (bgLightGray) | dim       |
+| cyan         | lightWhite            | bgGrey (bgGray)    | bgLightWhite              | inverse   |
+| white        | lightCyan             | bgWhite            | bgLightBlue               | bold      |
+| grey (gray)  | lightGrey (lightGray) | bgBlue             | bgLightGreen              |
+| blue         | lightMagenta          | bgGreen            | bgLightMagenta            |
+| green        | lightBlue             | bgMagenta          | bgLightYellow             |
+| yellow       | lightGreen            | bgYellow           |
 
 ---
 
