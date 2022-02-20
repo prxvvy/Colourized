@@ -15,61 +15,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-declare namespace colorized_lib {
-	export interface ColorizedFunction {
+declare namespace Colorized {
+	interface ColorizedFunction {
 		(text: string): string;
-
-		// Foreground
-		black: ColorizedFunction;
-		red: ColorizedFunction;
-		yellow: ColorizedFunction;
-		green: ColorizedFunction;
-		blue: ColorizedFunction;
-		magenta: ColorizedFunction;
-		grey: ColorizedFunction;
-		gray: ColorizedFunction;
-		white: ColorizedFunction;
-		cyan: ColorizedFunction;
-		lightRed: ColorizedFunction;
-		lightYellow: ColorizedFunction;
-		lightBlue: ColorizedFunction;
-		lightGreen: ColorizedFunction;
-		lightGrey: ColorizedFunction;
-		lightGray: ColorizedFunction;
-		lightCyan: ColorizedFunction;
-		lightMagenta: ColorizedFunction;
-		lightWhite: ColorizedFunction;
-
-		// Background
-		bgRed: ColorizedFunction;
-		bgBlack: ColorizedFunction;
-		bgGreen: ColorizedFunction;
-		bgYellow: ColorizedFunction;
-		bgBlue: ColorizedFunction;
-		bgMagenta: ColorizedFunction;
-		bgCyan: ColorizedFunction;
-		bgWhite: ColorizedFunction;
-		bgGrey: ColorizedFunction;
-		bgGray: ColorizedFunction;
-
-		bgLightRed: ColorizedFunction;
-		bgLightGreen: ColorizedFunction;
-		bgLightYellow: ColorizedFunction;
-		bgLightBlue: ColorizedFunction;
-		bgLightMagenta: ColorizedFunction;
-		bgLightCyan: ColorizedFunction;
-		bgLightWhite: ColorizedFunction;
-		bgLightGrey: ColorizedFunction;
-		bgLightGray: ColorizedFunction;
-		// Styles
-		underline: ColorizedFunction;
-		bold: ColorizedFunction;
-		italic: ColorizedFunction;
-		dim: ColorizedFunction;
-		inverse: ColorizedFunction;
 	}
 
-	// Foreground
 	export const black: ColorizedFunction;
 	export const red: ColorizedFunction;
 	export const yellow: ColorizedFunction;
@@ -82,15 +32,13 @@ declare namespace colorized_lib {
 	export const cyan: ColorizedFunction;
 	export const lightRed: ColorizedFunction;
 	export const lightYellow: ColorizedFunction;
-	export const lightBlue: ColorizedFunction;
 	export const lightGreen: ColorizedFunction;
+	export const lightBlue: ColorizedFunction;
 	export const lightGrey: ColorizedFunction;
 	export const lightGray: ColorizedFunction;
 	export const lightCyan: ColorizedFunction;
 	export const lightMagenta: ColorizedFunction;
 	export const lightWhite: ColorizedFunction;
-
-	// Background
 	export const bgRed: ColorizedFunction;
 	export const bgBlack: ColorizedFunction;
 	export const bgGreen: ColorizedFunction;
@@ -99,9 +47,8 @@ declare namespace colorized_lib {
 	export const bgMagenta: ColorizedFunction;
 	export const bgCyan: ColorizedFunction;
 	export const bgWhite: ColorizedFunction;
-	export const bgGrey: ColorizedFunction;
 	export const bgGray: ColorizedFunction;
-
+	export const bgGrey: ColorizedFunction;
 	export const bgLightRed: ColorizedFunction;
 	export const bgLightGreen: ColorizedFunction;
 	export const bgLightYellow: ColorizedFunction;
@@ -111,7 +58,6 @@ declare namespace colorized_lib {
 	export const bgLightWhite: ColorizedFunction;
 	export const bgLightGrey: ColorizedFunction;
 	export const bgLightGray: ColorizedFunction;
-	// Styles
 	export const underline: ColorizedFunction;
 	export const bold: ColorizedFunction;
 	export const dim: ColorizedFunction;
@@ -119,5 +65,5 @@ declare namespace colorized_lib {
 	export const inverse: ColorizedFunction;
 }
 
-export = colorized_lib;
-export as namespace colorized_lib;
+export = Colorized;
+export as namespace Colorized;

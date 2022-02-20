@@ -8,7 +8,7 @@
 
 An **open source** and easy-to-use library to colour your [Node.js](https://nodejs.org/en/) console output.
 
-![colours](https://github.com/prxvvy/Colourized/blob/master/screenshots/a2.jpg 'a')
+![colours](https://github.com/prxvvy/Colourized/blob/master/screenshots/a.jpg 'a')
 
 ---
 
@@ -28,7 +28,9 @@ const color = require('colourized');
 
 ```js
 const color = require('colourized');
+/* const {red, bgRed} = require('colourized'); */
 /* import color from 'colourized'; */
+/* import {red, bgRed} from 'colourized'; */
 
 console.log(color.red('Hello World! This output is gonna be red.'));
 console.log(color.yellow('Hello World! This output is gonna be yellow.'));
@@ -37,8 +39,10 @@ console.log(color.blue('Hello World! This output is gonna be blue.'));
 console.log(color.black('Hello World! This output is gonna be black.'));
 console.log(color.magenta('Hello World! This output is gonna be magenta.'));
 console.log(
-	color.black.bgRed(
-		'Hello World! This output is gonna be black font with red background.'
+	color.black(
+		color.bgRed(
+			'Hello World! This output is gonna be black font with red background.'
+		)
 	)
 );
 ```

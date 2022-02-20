@@ -22,7 +22,7 @@
 #include "include/colourit_node.hpp"
 
 extern "C" {
-#include <stdlib.h>
+#include <stdio.h>
 
 #include "include/colours.h"
 }
@@ -162,15 +162,16 @@ Value ColourIt(const CallbackInfo &info, Colours colour) {
       case INVERSE_:
          p_colouredString = Inverse(p_input);
          break;
-
       default:
-         p_colouredString = NULL;
-         break;
+         p_colouredString = (char *)calloc(2, sizeof(char *));
+         strcpy(p_colouredString, "");
    }
 
-   String colouredString = String::New(env, p_colouredString);
+   string convertedStr = p_colouredString;
 
    free(p_colouredString);
+
+   String colouredString = String::New(env, convertedStr);
 
    return colouredString;
 }
